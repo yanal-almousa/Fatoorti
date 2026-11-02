@@ -1,0 +1,11 @@
+bill_id,image,household,company,city,bill_month,reading_date,prev_reading,calculated_reading,current_reading,billed_kwh,tariff_type,consumption_value_jd,fuel_price_diff_jd,meter_fee_jd,rural_fils_jd,tv_fee_jd,waste_fee_jd,fixed_discount_jd,bill_value_jd,settlement_jd,amount_due_jd,notes
+B01,data/bills/B01.jpg,H1,JEPCO,Amman,2024-06,2024-06-18,1118,1307,1307,189,subsidized,9.450,0.000,0.200,0.189,1.000,1.666,2.500,12.505,10.005,0.000,settlement covers the bill
+B02,data/bills/B02.jpg,H2,JEPCO,Amman,2024-03,2024-03-18,924,1528,1528,604,subsidized,45.800,0.000,0.200,0.604,1.000,3.686,0.000,51.290,0.000,51.290,just above 600 so discount lost
+B03,data/bills/B03.jpg,H2,JEPCO,Amman,2024-04,2024-04-18,1528,2183,2183,655,subsidized,56.000,0.000,0.200,0.655,1.000,3.941,0.000,61.796,0.000,61.796,
+B04,data/bills/B04.jpg,H1,JEPCO,Amman,2024-07,2024-07-22,1307,1520,1548,213,subsidized,10.650,0.000,0.200,0.213,1.000,1.731,2.000,13.794,0.000,11.794,34-day period normalised to 30 days
+B05,data/bills/B05.jpg,H3,JEPCO,Amman,2024-04,2024-04-18,852,1127,1127,275,subsidized,13.750,0.000,0.200,0.275,1.000,2.041,2.000,17.266,0.000,15.266,faded thermal print
+B06,data/bills/B06.jpg,H3,JEPCO,Amman,2024-03,2024-03-18,519,852,852,333,subsidized,18.300,0.000,0.200,0.333,1.000,2.331,2.000,22.164,0.000,20.164,
+B07,data/bills/B07.jpg,H2,JEPCO,Amman,2024-07,2024-07-22,3319,4031,4126,712,subsidized,67.400,0.000,0.200,0.712,1.000,4.226,0.000,73.538,0.000,73.538,34-day period normalised; tier breakdown printed
+B08,data/bills/B08.jpg,H3,JEPCO,Amman,2024-07,2024-07-22,1667,2040,2090,373,subsidized,22.300,0.000,0.200,0.373,1.000,2.531,2.000,26.404,0.000,24.404,34-day period normalised; tier breakdown printed
+B09,data/bills/B09.jpg,H2,JEPCO,Amman,2024-02,2024-02-18,90,924,924,834,subsidized,91.800,0.000,0.200,0.834,1.000,4.836,0.000,98.670,98.670,0.000,settlement covers the bill
+B10,data/bills/B10.jpg,H4,IDECO,Irbid,2025-09,2025-10-05,30492,30774,30845,282,unsubsidized,33.840,0.000,0.200,0.282,1.000,3.000,0.000,38.322,0.000,38.322,different layout; flat waste fee

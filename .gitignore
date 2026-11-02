@@ -1,0 +1,35 @@
+# Unredacted originals — NEVER commit these
+data/raw/*
+!data/raw/README.md
+
+# Archives and stray uploads
+*.zip
+* (1).*
+* (2).*
+
+# Secrets
+.env
+*token*
+*.key
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Model weights and caches (too big for GitHub)
+*.safetensors
+*.bin
+.cache/
+hf_cache/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Word lock files
+~$*

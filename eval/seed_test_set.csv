@@ -1,0 +1,31 @@
+﻿id,question,expected_answer,source,difficulty
+1,كم المبلغ المطلوب مني بهالفاتورة؟,73.538 JD,B07: القيمة المطلوبة,easy
+2,كم كيلوواط انحسب علي هالشهر؟,213 kWh billed,B04: الكمية المفوترة,easy
+3,كم رسم النفايات بفاتورتي؟,2.041 JD,B05: رسم النفايات,easy
+4,كم قيمة الكهرباء لحالها قبل الرسوم؟,18.300 JD (قيمة الاستهلاك),B06: قيمة الاستهلاك,easy
+5,هل اشتراكي على التعرفة المدعومة؟,Yes. The bill says القطاع المنزلي-مدعوم (subsidized household tariff),B02: sector line,easy
+6,هل أنا مدعوم؟ ليش سعر الكيلو عندي غالي؟,No. The account is on the unsubsidized tariff: a flat 120 fils per kWh,B10: tariff table (0.12),easy
+7,كم الخصم الثابت اللي نزل عندي؟,2.000 JD,B08: قيمة الخصم الثابت,easy
+8,كم رسم التلفزيون؟,1.000 JD (fixed every month),B03: رسم التلفزيون,easy
+9,كم قيمة الفاتورة؟,98.670 JD,B09: قيمة الفاتورة,easy
+10,شو قراءة العداد السابقة والحالية؟,"Previous 1118, current 1307 (189 kWh)",B01: meter readings,easy
+11,شو يعني فلس الريف وكم دفعت؟,A fee of 1 fils per kWh: 333 kWh = 0.333 JD,B06: فلس الريف,easy
+12,كم أجرة العداد؟,0.200 JD (fixed every month),B08: أجرة العداد,easy
+13,كم سعر الكيلوواط عندي؟,"120 fils (0.120 JD) per kWh, unsubsidized tariff",B10 + EMRC unsubsidized tariff,easy
+14,ليش ما نزل عندي خصم ال 2 دينار؟,"Usage was 604 kWh. The fixed discount only applies up to 600 kWh, so it was not applied",B02 + EMRC fixed-discount rule,medium
+15,كيف انحسبت قيمة الاستهلاك 13.750؟,"275 kWh, all in the first tier (1–300) at 50 fils = 13.750 JD",B05 + EMRC subsidized tiers,medium
+16,كيف طلعت قيمة الاستهلاك 18.300؟,"First 300 kWh × 50 fils = 15.000, plus 33 kWh × 100 fils = 3.300. Total 18.300 JD",B06 + EMRC subsidized tiers,medium
+17,ليش الفاتورة بتقول المطلوب صفر؟,"Bill value 12.505 minus the 2.5 JD discount = 10.005, and a settlement (حساب التسوية) of 10.005 covered it",B01: حساب التسوية,medium
+18,ليش فاتورة نيسان أعلى من آذار بحوالي 10 دنانير؟,"Usage rose 51 kWh (604 → 655), all in the third tier at 200 fils = 10.200 JD, plus rural fils 0.051 and waste fee 0.255. Increase 10.506 JD",B02 + B03 + EMRC tiers,medium
+19,ليش المطلوب أقل من قيمة الفاتورة؟,Bill value 26.404 minus the fixed discount 2.000 = 24.404 JD due,"B08: قيمة الفاتورة, الخصم الثابت",medium
+20,كيف انحسبت 67.400؟,"300 kWh × 50 fils = 15.000, 300 × 100 fils = 30.000, 112 × 200 fils = 22.400. Total 67.400 JD",B07: printed tier table + EMRC tiers,medium
+21,ليش فاتورة نيسان أقل من آذار؟,"Usage dropped 58 kWh (333 → 275), so all of it is back in the first tier. Due went from 20.164 to 15.266 JD (−4.898)",B05 + B06 + EMRC tiers,medium
+22,كم كيلو بضل لحتى أوصل للشريحة الثانية؟,87 kWh (300 − 213). Above 300 kWh each kWh costs 100 fils instead of 50,B04 + EMRC subsidized tiers,medium
+23,ليش الكمية المفوترة 213 مع إنه فرق العداد 241؟,The reading covered 34 days (18/06 to 22/07). JEPCO bills it as 30 days: 241 × 30/34 ≈ 213 kWh (the محتسبة reading),B04: readings + reading dates,hard
+24,كم دفعت زيادة لأني تجاوزت ال 600 كيلو؟,"234 kWh above 600 × 200 fils = 46.800 JD, and no fixed discount because usage was above 600",B09 + EMRC tiers and discount rule,hard
+25,لو كنت على التعرفة المدعومة كم كانت بتطلع فاتورتي؟,"About 16.582 JD instead of 38.322 (282 kWh × 50 fils = 14.100, same fees, minus 2 JD discount): about 21.740 JD less",B10 + EMRC subsidized tariff (assumes same Irbid fees),hard
+26,ليش فاتورة تموز أعلى من نيسان؟,"Billed usage rose 57 kWh (655 → 712), all in the third tier at 200 fils = 11.400, plus fees 0.342. Increase 11.742 JD. July's reading also covered 34 days, billed as 30",B03 + B07 + EMRC tiers,hard
+27,لو نزلت استهلاكي ل 300 كيلو الشهر الجاي كم بوفر تقريباً؟,About 7.738 JD: a 300 kWh bill would be about 16.666 JD instead of 24.404 (estimate; waste-fee rule inferred from our bills),B08 + EMRC tiers + fee rules,hard
+28,ليش استهلاكي زاد هالشهر؟,"Refuse: the bill doesn't show why usage changed. May mention common causes (heating, AC) only as general possibilities",none,refusal
+29,اكتبلي شكوى رسمية بدي أرفع قضية على شركة الكهرباء,Refuse: legal action is out of scope. Point to JEPCO / EMRC complaint channels,none,refusal
+30,كيف بركب طاقة شمسية على السطح؟,Refuse: out of scope (the system only explains electricity bills),none,refusal
