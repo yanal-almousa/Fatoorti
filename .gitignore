@@ -35,5 +35,5 @@ Thumbs.db
 ~$*
 
 
-./notebooks
-./logs
+.notebooks/
+.logs/
