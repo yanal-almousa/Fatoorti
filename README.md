@@ -1,4 +1,4 @@
-# Fatoorti (فاتورتي) — Jordanian electricity bill explainer
+# Fatoorti (فاتورتي) - Jordanian electricity bill explainer
 
 Team project for **Building LLM Systems: From Models to Production**.
 
@@ -19,7 +19,7 @@ Bill photo ──► Qwen2.5-VL reads every line as JSON
 | `data/bills.csv` | Answer key: every line of each bill, typed by hand (no personal data) |
 | `data/bills/` | Redacted bill photos `B01.jpg` … `B10.jpg` |
 | `data/sources/` | Official tariff documents used by the system |
-| `data/raw/` | Original unredacted photos — **local only, never committed** (git-ignored) |
+| `data/raw/` | Original unredacted photos - **local only, never committed** (git-ignored) |
 | `eval/seed_test_set.csv` | 30 test questions with expected answers, written before trying any model |
 | `notebooks/bill_explainer.ipynb` | Calculator, bill reader (Qwen2.5-VL), explanation, evaluation |
 | `docs/` | Phase submissions (proposal, data card) |
